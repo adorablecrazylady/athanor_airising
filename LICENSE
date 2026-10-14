@@ -2,8 +2,6 @@ Athanor Workshop License 1.0
 
 Copyright (c) 2026 CODE Éxitos. All rights reserved.
 
-DRAFT - pending legal review. Not yet in effect.
-
 This license covers the software, database scripts, data and documentation in
 this repository (the "Materials"). It is not an open-source license.
 
@@ -17,8 +15,10 @@ this repository (the "Materials"). It is not an open-source license.
 
    During the Session you attend, you may:
 
-   a. view, download and clone the Materials;
-   b. build, run, analyze and change them on your own device; and
+   a. view, download and clone the Materials, and copy them into one private
+      repository of your own (for example with GitHub's "Use this template");
+   b. build, run, analyze and change them on your own device or in a cloud
+      development environment you control, such as GitHub Codespaces; and
    c. process them with AI coding assistants and analysis tools to complete
       the Session's exercises, provided those tools are not configured to use
       your inputs to train or improve AI models.
@@ -40,7 +40,8 @@ this repository (the "Materials"). It is not an open-source license.
 4. After the Session
 
    When the Session ends, you must delete every copy of the Materials and of
-   any changed version of them. You may keep your own notes about what you
+   any changed version of them, including any repository copy and Codespace
+   you created for the Session. You may keep your own notes about what you
    learned, as long as they do not reproduce substantial parts of the
    Materials.
 
@@ -74,9 +75,4 @@ this repository (the "Materials"). It is not an open-source license.
 
    CODE Éxitos reserves all rights not expressly granted in this license.
 
-10. Governing law
-
-   This license is governed by the laws of [JURISDICTION - to be set by
-   counsel].
-
-Questions about permitted use: [CONTACT EMAIL - to be set].
+Questions about permitted use: juan.c.mendez@codexitos.com

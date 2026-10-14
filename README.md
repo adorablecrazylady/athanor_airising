@@ -78,26 +78,40 @@ You'll meet these terms in the code, the database and the rules.
 
 The projects target .NET Framework, so they won't build on a Mac or Linux machine. The workshop doesn't need a build: every step reads the code. The database is optional and is there so you can check what you find against real rows.
 
-## Setup
+## Quick start
 
-1. Install Claude Code and sign in. You need read access to this repository and to `code-exitos/codebase-xray`.
-2. Install the plugin, then restart Claude Code so its skills load:
-   ```
-   /plugin marketplace add code-exitos/codebase-xray
-   /plugin install codebase-xray@codebase-xray
-   ```
-3. Clone the repository and start from the untouched codebase:
-   ```
-   git clone git@github.com:code-exitos/flight-log-workshop.git
-   cd flight-log-workshop
-   git checkout snapshot/00-start
-   ```
-4. Install Python 3.8+ and Node.js. Node is only used to render diagrams to SVG.
-5. Optional: run the database in Docker. See [database/README.md](database/README.md).
+1. Open <https://github.com/code-exitos/flight-log-workshop> and sign in with a **personal** GitHub account (not an employer-managed one).
+2. Click **Use this template** → **Create a new repository**.
+3. Set **Owner** to your account, keep the name `flight-log-workshop`, choose **Private**, and **tick "Include all branches."** Click **Create repository**.
+4. In your new repo, click **Code → Codespaces**, then **…** → **New with options**. Pick branch `snapshot/00-start` and click **Create codespace**. Setup takes a few minutes the first time.
+5. In the terminal run `bash scripts/workshop-check.sh` and fix any ✘ it shows.
+6. Type `claude` and log in with your Claude account. When Claude Code asks whether to trust this folder, say yes: that turns on the codebase-xray plugin.
+7. Give Claude the first prompt: `x-ray this codebase`.
+8. When the session ends, delete your codespace at <https://github.com/codespaces> and delete your copy of the repository (Settings → Danger Zone). The [license](LICENSE) asks for this.
+
+### Running locally (fallback)
+
+Needs Git, Python 3.8+, Node 22+ (Node only renders diagrams to SVG) and Claude Code. Replace `YOUR-USER` with your GitHub user name. Do this after you create your own copy (steps 1 to 3).
+
+```bash
+git clone https://github.com/YOUR-USER/flight-log-workshop.git
+cd flight-log-workshop
+git switch snapshot/00-start
+bash scripts/workshop-check.sh
+claude
+```
+
+If the plugin doesn't load, run `/plugin marketplace add code-exitos/codebase-xray` and `/plugin install codebase-xray@codebase-xray` inside Claude Code, then `/reload-plugins`.
+
+The database is optional; the workshop doesn't need a build. To run it in Docker, see [database/README.md](database/README.md).
+
+### Workshop infrastructure
+
+`.devcontainer/`, `.claude/settings.json` and `scripts/` set up the Codespace, the plugin and the setup check. They are not part of the FLT system.
 
 ## How the workshop runs
 
-Each step is a *story*: a question, a prompt you give Claude, and a result you review. Every step ends on a branch, and each branch builds on the one before it. If you fall behind, or your run is still going, `git checkout snapshot/0N-<step>` and carry on. LLM output differs from run to run, so your numbers won't match the reference exactly.
+Each step is a *story*: a question, a prompt you give Claude, and a result you review. Every step ends on a branch, and each branch builds on the one before it. If you fall behind, or your run is still going, `git switch snapshot/0N-<step>` and carry on (commit or stash your own changes first). LLM output differs from run to run, so your numbers won't match the reference exactly.
 
 | Story | Question it answers | Skill | Snapshot |
 |---|---|---|---|
@@ -144,8 +158,8 @@ Characterization tests are written from the top-priority rule cards, then a port
 
 This repository is **not open source**. It is licensed under the [Athanor Workshop License 1.0](LICENSE), which lets you use it only while taking part in an Athanor workshop run by CODE Éxitos:
 
-- **You may** clone it, read it, run it, change it locally and analyze it with AI coding assistants during the session.
+- **You may** copy it into one private repository of your own, open it in a Codespace or clone it, read it, run it, change it and analyze it with AI coding assistants during the session.
 - **You may not** publish or share it or any changed version, keep a public fork, use it commercially or to teach other courses, or use it to train AI models.
-- **When the session ends**, delete your copies. Your own notes are fine.
+- **When the session ends**, delete your copies, including your repository copy and your Codespace. Your own notes are fine.
 
 The jQuery, jQuery UI, Bootstrap, Modernizr and Respond.js files are third-party and keep their own licenses. NuGet packages and the Crystal Reports viewer files are not included; the workshop doesn't need a build.
