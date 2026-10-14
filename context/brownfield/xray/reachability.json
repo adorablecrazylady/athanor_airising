@@ -8,7 +8,6 @@
     "f:FltFleet/Login.aspx",
     "f:FltFleet/Default.aspx",
     "f:FLTExportConsoleApp/FLTExportConsoleApp/Program.vb",
-    "f:FLTDownloadTool/Form1.vb",
     "f:FLTWebAPI/FltWebApi/Global.asax",
     "f:FLTWebAPI/FltWebApi/Controllers/AirframesController.cs",
     "f:FLTWebAPI/FltWebApi/Controllers/FleetController.cs",
@@ -21,14 +20,11 @@
     "f:FLTWebAPI/FltWebApi/Controllers/RoutesController.cs",
     "f:FLTWebAPI/FltWebApi/Controllers/LocationsController.cs",
     "f:FLTWebAPI/FltWebApi/Controllers/FlightInfosController.cs",
-    "f:FLTWebAPI/FltWebApi/Controllers/CargosController.cs",
-    "f:FLTRestClient/Program.cs",
-    "f:FLTRestService/Global.asax",
-    "f:FLTRestService/Global.asax.cs"
+    "f:FLTWebAPI/FltWebApi/Controllers/CargosController.cs"
   ],
   "counts": {
-    "active": 759,
-    "dormant": 243,
+    "active": 733,
+    "dormant": 269,
     "unknown": 0,
     "orphaned": 66
   },
@@ -1831,60 +1827,37 @@
       "name": "Form1.Designer.vb",
       "kind": "module",
       "file": "FLTDownloadTool/Form1.Designer.vb",
-      "status": "active",
-      "via": [
-        "f:FLTDownloadTool/Form1.vb",
-        "f:FLTDownloadTool/Form1.Designer.vb"
-      ]
+      "status": "dormant"
     },
     "f:FLTDownloadTool/Form1.vb": {
       "name": "Form1.vb",
       "kind": "module",
       "file": "FLTDownloadTool/Form1.vb",
-      "status": "active",
-      "via": [
-        "f:FLTDownloadTool/Form1.vb"
-      ]
+      "status": "dormant"
     },
     "f:FLTDownloadTool/My Project/Application.Designer.vb": {
       "name": "Application.Designer.vb",
       "kind": "module",
       "file": "FLTDownloadTool/My Project/Application.Designer.vb",
-      "status": "active",
-      "via": [
-        "f:FLTDownloadTool/Form1.vb",
-        "f:FLTDownloadTool/My Project/Application.Designer.vb"
-      ]
+      "status": "dormant"
     },
     "f:FLTDownloadTool/My Project/AssemblyInfo.vb": {
       "name": "AssemblyInfo.vb",
       "kind": "module",
       "file": "FLTDownloadTool/My Project/AssemblyInfo.vb",
-      "status": "active",
-      "via": [
-        "f:FLTDownloadTool/Form1.vb",
-        "f:FLTDownloadTool/My Project/AssemblyInfo.vb"
-      ]
+      "status": "dormant"
     },
     "f:FLTDownloadTool/My Project/Resources.Designer.vb": {
       "name": "Resources.Designer.vb",
       "kind": "module",
       "file": "FLTDownloadTool/My Project/Resources.Designer.vb",
-      "status": "active",
-      "via": [
-        "f:FLTDownloadTool/Form1.vb",
-        "f:FLTDownloadTool/My Project/Resources.Designer.vb"
-      ]
+      "status": "dormant"
     },
     "f:FLTDownloadTool/My Project/Settings.Designer.vb": {
       "name": "Settings.Designer.vb",
       "kind": "module",
       "file": "FLTDownloadTool/My Project/Settings.Designer.vb",
-      "status": "active",
-      "via": [
-        "f:FLTDownloadTool/Form1.vb",
-        "f:FLTDownloadTool/My Project/Settings.Designer.vb"
-      ]
+      "status": "dormant"
     },
     "f:FLTExportClient/FltExportClient.Designer.vb": {
       "name": "FltExportClient.Designer.vb",
@@ -4750,209 +4723,121 @@
       "name": "Program.cs",
       "kind": "module",
       "file": "FLTRestClient/Program.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestClient/Program.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestClient/Properties/AssemblyInfo.cs": {
       "name": "AssemblyInfo.cs",
       "kind": "module",
       "file": "FLTRestClient/Properties/AssemblyInfo.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestClient/Program.cs",
-        "f:FLTRestClient/Properties/AssemblyInfo.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestClient/app.config": {
       "name": "app.config",
       "kind": "module",
       "file": "FLTRestClient/app.config",
-      "status": "active",
-      "via": [
-        "f:FLTRestClient/Program.cs",
-        "f:FLTRestClient/app.config"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/FLTService.cs": {
       "name": "FLTService.cs",
       "kind": "module",
       "file": "FLTRestService/FLTService.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Global.asax": {
       "name": "Global.asax",
       "kind": "module",
       "file": "FLTRestService/Global.asax",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Global.asax.cs": {
       "name": "Global.asax.cs",
       "kind": "module",
       "file": "FLTRestService/Global.asax.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Airframes.cs": {
       "name": "Airframes.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Airframes.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/Airframes.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Cargos.cs": {
       "name": "Cargos.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Cargos.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/Cargos.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Dollies.cs": {
       "name": "Dollies.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Dollies.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/Dollies.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Fleet.cs": {
       "name": "Fleet.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Fleet.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/Fleet.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/FlightInfos.cs": {
       "name": "FlightInfos.cs",
       "kind": "module",
       "file": "FLTRestService/Model/FlightInfos.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/FlightInfos.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Flights.cs": {
       "name": "Flights.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Flights.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/Flights.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Locations.cs": {
       "name": "Locations.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Locations.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/Locations.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/LookUpValues.cs": {
       "name": "LookUpValues.cs",
       "kind": "module",
       "file": "FLTRestService/Model/LookUpValues.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/LookUpValues.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Programs.cs": {
       "name": "Programs.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Programs.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/Programs.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Regions.cs": {
       "name": "Regions.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Regions.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/Regions.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/Routes.cs": {
       "name": "Routes.cs",
       "kind": "module",
       "file": "FLTRestService/Model/Routes.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/Model/Routes.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Model/TestString.cs": {
       "name": "TestString.cs",
       "kind": "module",
       "file": "FLTRestService/Model/TestString.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax.cs",
-        "f:FLTRestService/FLTService.cs",
-        "f:FLTRestService/Model/TestString.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Properties/AssemblyInfo.cs": {
       "name": "AssemblyInfo.cs",
       "kind": "module",
       "file": "FLTRestService/Properties/AssemblyInfo.cs",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax",
-        "f:FLTRestService/Properties/AssemblyInfo.cs"
-      ]
+      "status": "dormant"
     },
     "f:FLTRestService/Web.config": {
       "name": "Web.config",
       "kind": "module",
       "file": "FLTRestService/Web.config",
-      "status": "active",
-      "via": [
-        "f:FLTRestService/Global.asax",
-        "f:FLTRestService/Web.config"
-      ]
+      "status": "dormant"
     },
     "f:FLTWebAPI/FltWebApi/App_Code/IdentityManager.cs": {
       "name": "IdentityManager.cs",

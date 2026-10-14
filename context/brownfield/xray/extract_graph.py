@@ -395,7 +395,14 @@ def find(relpath):
     return by_abs.get(os.path.join(ROOT, relpath).lower())
 
 
+# Confirmed by the client on 2026-10-14: no longer deployed or used, so not entry points.
+RETIRED_PROJECTS = {'FltRestService', 'FltRestClient', 'FLTDownloadTool'}
+
+
 def ep(lid, why):
+    proj = leaves[lid]['_proj'] if lid in leaves else None
+    if proj and projects[proj]['name'] in RETIRED_PROJECTS:
+        return
     if lid and lid in leaves and lid not in entry:
         entry.append(lid)
         entry_why[lid] = why
